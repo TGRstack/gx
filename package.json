@@ -1,11 +1,11 @@
 {
-  "name": "gx",
+  "name": "@tgrx/gx",
   "version": "1.0.0-rc4",
   "xdescription": "Minimal responsive React grid system based on the Fab Four Technique",
   "description": "Minimal responsive React grid system based on the <a href='https://medium.freecodecamp.com/the-fab-four-technique-to-create-responsive-emails-without-media-queries-baf11fdfa848#.hnwla2u14'>Fab Four Technique</a>.",
   "main": "dist/Gx.js",
   "scripts": {
-    "prepublish": "mkdir -p dist && babel src --out-dir dist",
+    "prepare": "mkdir -p dist && babel src --out-dir dist",
     "start": "static-react docs/Root.js -p docs/data.js > index.html",
     "watch:docs": "onchange docs/**/* -- npm run start",
     "karma": "karma start test/karma.config.js",
@@ -13,6 +13,10 @@
     "test": "npm run mocha && npm run karma"
   },
   "author": "Brent Jackson",
+  "contributors": [
+    "Marco Cedaro",
+    "Florian Mettetal"
+  ],
   "license": "MIT",
   "keywords": [
     "react",
@@ -20,6 +24,10 @@
     "grid",
     "layout"
   ],
+  "bugs": {
+    "url": "https://github.com/tgrstack/gx/issues"
+  },
+  "homepage": "https://github.com/tgrstack/gx#readme",
   "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-loader": "^7.0.0",
@@ -43,6 +51,10 @@
     "react-test-renderer": "^15.5.4",
     "static-react": "^3.1.0",
     "webpack": "^1.12.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tgrstack/gx.git"
   },
   "babel": {
     "presets": [
